@@ -1,0 +1,30 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #5DB7DE, #ACFCD9);
+}
+
+main{
+    background-color: white;
+    width: 600px; /* Largura */
+    padding: 10px; /* Para descolar um pouco a borda das letras */
+    margin: auto;/* Para ficar sempre no meio da tela */
+    border-radius: 10px; /* Arredondar bordas */
+    box-shadow: 5px 5px 15px #213022;/* Adicionar sombra, Lado/ Baixo / Espalhamento */
+}
+
+h1 {
+    color: #648767;
+    text-align: center;
+    text-shadow: 1px 1px 2px #374b38a1;/* Sombra no texto */
+}
+
+h2 {
+    color: #579F7F;
+}
+
+p {
+    text-align: justify;
+}

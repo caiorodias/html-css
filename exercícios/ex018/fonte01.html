@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(fonts/love-story.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Love', Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas: 
+            cm, mm, in(polegadas), px, pt(ponto), pc(paica) 
+            
+            Medidas Relativas: 
+            em(tamanho atual da fonte), ex(altura do x da fonte), rem(relativo ao root), vw (viewport), vh(altura da viweport), %
+            16px = 1em
+            */
+            font-size: 16px;/* O ideal é usar em pixels ou em */
+            font-weight: bold ;
+            /* -weight(peso): lighter, normal, bold(negrito), bolder ou de 100 à 900
+               -width(largura):
+               -height(altura)
+                */
+            font-style: italic;/* Italico, normal, obliquo */
+            text-decoration: underline; /* Para deixar sublinhado */
+
+            /* Resumindo tudo em uma linha */
+            font: italic bolder 2em 'Arial', sans-serif;
+            /* Nesse caso tem que estar na ordem certa
+            - font: font-style->font-weight->font-size->font-family 
+            Caso não queira colocar uma das informações é só pular*/
+            
+        }
+        h1 {
+            font-family: 'Love';
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error recusandae quam sapiente temporibus ipsa! Fuga id, ducimus nemo, cumque architecto aut quas placeat quos quae dolore mollitia, consequatur assumenda temporibus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, quasi ratione illo animi soluta similique beatae quia nulla corrupti ipsum recusandae laborum incidunt dolor, ex natus ullam ab consectetur aliquid?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ipsa saepe ipsum nisi ullam aperiam corrupti sint mollitia ut distinctio id neque aut cumque accusantium eum, adipisci aliquam ex ipsam.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores facilis laboriosam deleniti eius reprehenderit eveniet, alias possimus ad fugit assumenda debitis quas placeat, minus accusamus, voluptatum porro corporis commodi!</p>
+</body>
+</html>

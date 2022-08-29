@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">        
+        <img src="imagens/foto-g.png" alt="Imagem flexível"><!-- PICTURE é a tag para colocar a imagem flexível, a tag IMG vai dentro da PICTURE para dizer qual é a img, SRCSET diz qual imagem que vai se ajustar e TYPE é o tipo da img. os pixels 1050px é para ficar no tamanho ideal e mudar a img sem criar a barra de rolagem lateral -->
+    </picture><!-- tudo isso serve para a imagem se adaptar à tela do usuário -->
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls loop> <!-- O parâmetro preload METADATA é para carregar alguns dados do arquivo, o AUTO vai carregar tudo, e o NONE so carrega quando o usuário der o play, o ideal é o metadata. CONTROLS é para aparecer o controle do audio, Outro parâmetro é o LOOP se quiser ficar repetindo a música -->
+        <source src="midia/baile.mp3" type="audio/mpeg">
+        <source src="midia/baile.mp3" type="audio/ogg">
+        <source src="midia/baile.mp3" type="audio/wav"><!-- Evitar wav por serem arquivos mt pesados -->
+        <p>infelizmente seu navegador não consegue reproduzir audio. <a href="midia/baile.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

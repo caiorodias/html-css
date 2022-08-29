@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');/* Importado do google fonts. Precisa vir primeiro */
+
+        @font-face {
+            font-family: 'Love';
+            src: url(fonts/love-story.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        } /* Assim que se insere fontes externas */
+            /* Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg */
+        body {
+            font-family: 'Oswald'
+        }
+        h1 {
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, minima. Dolorum, dicta voluptatibus enim molestiae id ad cum consectetur aperiam asperiores iure? Repudiandae unde ab ullam quia culpa expedita laboriosam.</p>
+</body>
+</html>
