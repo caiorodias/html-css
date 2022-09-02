@@ -1,0 +1,70 @@
+/* passion-one-regular - latin */
+@font-face {
+    font-family: 'Passion One';
+    src: url(fontes/passion-one-bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha-Regular.ttf);
+}
+
+body {
+    height: 97vh;
+    background-image: url('imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+    background-attachment: fixed;
+
+}
+
+article {
+    margin-top: -65px;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+header > h1 {
+    font-size: 11em;
+    margin: -8px 0px;
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+header > p {
+    padding-bottom: 50px;
+    padding-top: 1px;
+    font-size: 1.3em;
+}
+
+* > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.total {
+    background-color: white;
+    padding: 110px 35px 100px;
+}
+
+div.foto {
+    color: white;
+    padding: 110px 35px 100px;
+}
+
+* > p {
+    font-family: 'Sriracha', cursive;
+    font-size: 4em;
+}
