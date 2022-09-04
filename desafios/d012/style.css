@@ -10,9 +10,17 @@
     src: url(fontes/Sriracha-Regular.ttf);
 }
 
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 * > a {
@@ -28,26 +36,25 @@ a:hover {
 html, body {
     background-color: darkgray;
     height: 100vh;
-    background-image: url('imagens/background001.jpg'), url(imagens/background002.jpg);
+    background-image: url('imagens/background001.jpg'), url('imagens/background002.jpg');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -20px;
     background-attachment: fixed;
+    font-family: var(--font1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-    margin-right: -8px;
-    margin-left: -8px;
 }
 
 header > h1 {
-    font-family: 'Passion One', sans-serif;
-    font-weight: bold;
+    font-family: var(--font2);
     padding-top: 50px;
+    font-size: 10vw;
     font-variant: small-caps ;/* text-transform: uppercase/lowcase */
 }
 
@@ -56,11 +63,12 @@ header > p {
 }
 
 section {
-    font-family: 'Sriracha', cursive;
+    font-family: var(--font3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 4.5vw;/* Responsividade */
 }
 
 section.total {
@@ -70,12 +78,12 @@ section.total {
 
 section.foto {
     color: white;
-    max-width: 800px;
     background-color: rgba(0, 0, 0, 0.192);
 }
 
 section.foto > p {
-    width: 400px;
+    display: inline-block; /* Cx adptada ao tamanho do conteúdo */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
