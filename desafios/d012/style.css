@@ -71,6 +71,10 @@ section {
     font-size: 4.5vw;/* Responsividade */
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.total {
     background-color: white;
     color: black;
@@ -79,13 +83,27 @@ section.total {
 section.foto {
     color: white;
     background-color: rgba(0, 0, 0, 0.192);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-position: right center;
+    background-attachment: fixed; 
+    background-size: cover;
 }
 
 section.foto > p {
     display: inline-block; /* Cx adptada ao tamanho do conteúdo */
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
 }
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+}
+    
 
 footer {
     background-color: black;
