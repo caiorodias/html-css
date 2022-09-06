@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -24,6 +32,16 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;/*  colar na parte 0 */
+            background-color: gray;
+        }   /* Serve para colar as linhas-título para acompanhar o rolamento */
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }/* zebrado 2n =1 acada 2 / ou odd para ímpar ou even par */
+
         td.num {
             text-align: right;
         }
@@ -33,6 +51,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION (Legenda)
         THEAD
             TR, TD, TH
         TBODY
@@ -40,10 +59,11 @@
         TFOOT
             TR, TD, TH-->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th><!-- títulos que os dados estão na mesma coluna -->
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,7 +178,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th><!-- Th são títulos que os dados estão na mesma linha -->
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
         </tfoot>
