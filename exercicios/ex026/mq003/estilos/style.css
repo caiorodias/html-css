@@ -1,0 +1,43 @@
+/* Formas de fazer todas as declarações no mesmo documento */
+        /* Declarações gerais */
+       @media all {
+         * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(65, 51, 255);
+        }
+
+        h1 {
+            color: rgb(48, 46, 46);
+            text-shadow: 2px 2px 0px rgb(126, 124, 124);
+            padding: 10px;
+        }
+       }
+       
+        /* Declarações retrato */
+        @media  screen and (orientation:  portrait) {
+        
+        body {
+            background: url(../imagens/cev-portrait.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center bottom;
+        }
+        }
+        
+        /* Declarações paisagem */
+        @media  screen and (orientation:  landscape){
+        
+        body {
+            background: url(../imagens/cev-landscape.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left bottom;
+        }
+        }
